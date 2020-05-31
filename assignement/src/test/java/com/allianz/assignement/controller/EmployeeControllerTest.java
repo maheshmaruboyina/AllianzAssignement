@@ -28,7 +28,6 @@ import com.allianz.assignement.model.DeleteEmployeeRequest;
 import com.allianz.assignement.model.EmployeeResponse;
 import com.allianz.assignement.model.GetEmployeeResponse;
 import com.allianz.assignement.model.GetEmployeesListResponse;
-import com.allianz.assignement.utils.JwtTestUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @AutoConfigureMockMvc
@@ -45,9 +44,6 @@ Logger logger = LoggerFactory.getLogger(EmployeeControllerTest.class);
 	
 	@Autowired
 	WebApplicationContext context;
-		
-	@Autowired
-	JwtTestUtils jwtTestUtils;
 	
 	/*
 	 * Test Case for authenticate
